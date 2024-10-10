@@ -1,3 +1,5 @@
+
+
 """This is a program that takes products in a store as inputs and neatly outputs it as Data(textfile)
 This is a one month project
 
@@ -30,12 +32,33 @@ class Item:
     def __repr__(self):
         return f"Item('{self.name}', {self.price}, {self.quantity})\n"
 
-user_input = input("Input the number of your product: ")
-item1 = Item(user_input, 100, 1)
-item2 = Item("Laptop", 1000, 1)
-item3 = Item("Cable", 100, 1)
-item4 = Item("Mouse", 100, 1)
-item5 = Item("Keyboard", 100, 1)
+print("Please Input your Products ")
+product_1, product_2, product_3, product_4, product_5= input("Product 1: "), input("Product 2: "), input("Product 3: "), input("Product 4: "), input("Product 5: ")
+
+'''
+#buildig classes from the attributes we want
+class Products:
+    def __init__(self):
+        self.product1 = int("Item 1: ")
+        self.product2 =
+        self.product3 =
+        self.product4 =
+        self.product5 =
+#calling the Product Class
+my_products = Products()
+pass
+'''
+print ("Item Quantity")
+product_1_quantity, product_2_quantity, product_3_quantity, product_4_quantity, product_5_quantity = 
+input(f"Product 1 : {product_1}"), input(f"Product 2: {product_2}"), input(f"Product 3:{product_3} "), input(f"Product 4: {product_4}"), input(f"Product 5: {product_5}")
+
+
+
+item1 = Item(product_1, product_1_quantity, 1)
+item2 = Item(product_2, product_2_quantity, 1)
+item3 = Item(product_3, product_3_quantity, 1)
+item4 = Item(product_4, product_4_quantity, 1)
+item5 = Item(product_5, product_5_quantity, 1)
 
 print(Item.all)
 """for instance in Item.all:
